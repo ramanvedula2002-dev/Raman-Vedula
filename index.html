@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raman Vedula — Content Strategy & AI Narrative</title>
+<meta name="description" content="Raman Vedula — Content Strategist, Narrative Storyteller and AI Narrative Builder. BBC World Service, DD News, UCLA Anderson Easton Center.">
+<meta property="og:title" content="Raman Vedula — Narrative Storytelling & AI Content Strategy">
+<meta property="og:description" content="From BBC World Service to UCLA Anderson. Translating complex systems into stories that land.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0e0e;--paper:#f5f2eb;--accent:#c8391a;--muted:#6b6560;--rule:#d8d4cb;--teal:#1a6b5a;--teal-bg:#e8f4f0;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;font-size:16px;overflow-x:hidden;}
+.masthead{border-bottom:3px double var(--ink);padding:1.5rem 0 0;}
+.masthead-inner{max-width:1100px;margin:0 auto;padding:0 2rem;}
+.masthead-top{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1rem;}
+.masthead-kicker{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:.4rem;}
+.masthead-name{font-family:'Playfair Display',serif;font-size:clamp(3rem,7.5vw,6.5rem);font-weight:900;line-height:.9;letter-spacing:-.02em;display:block;color:var(--ink);font-style:normal;}
+.masthead-name .first{color:var(--accent);}
+.masthead-meta{text-align:right;font-size:11px;color:var(--muted);line-height:2;letter-spacing:.04em;}
+.masthead-tagline{border-top:1px solid var(--rule);padding:.7rem 0;display:flex;align-items:center;gap:1.5rem;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);overflow-x:auto;white-space:nowrap;}
+.masthead-tagline span{flex-shrink:0;}
+.masthead-tagline .sep{color:var(--rule);}
+nav{background:var(--ink);position:sticky;top:0;z-index:100;}
+nav ul{max-width:1100px;margin:0 auto;padding:0 2rem;display:flex;list-style:none;}
+nav ul li a{display:block;padding:.75rem 1.25rem;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);text-decoration:none;transition:color .2s;font-weight:400;}
+nav ul li a:hover{color:#fff;}
+nav ul li:first-child a{padding-left:0;}
+.container{max-width:1100px;margin:0 auto;padding:0 2rem;}
+section{padding:5rem 0;}
+.section-label{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);font-weight:500;display:flex;align-items:center;gap:.75rem;margin-bottom:2.5rem;}
+.section-label::after{content:'';flex:1;height:1px;background:var(--rule);}
+.section-headline{font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:1.5rem;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.body-copy{font-size:15.5px;line-height:1.9;color:#2a2520;font-weight:300;}
+.body-copy p+p{margin-top:1.25em;}
+.sidebar-stats{border-left:3px solid var(--ink);padding-left:2rem;}
+.stat{margin-bottom:2.5rem;}
+.stat-number{font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;line-height:1;color:var(--accent);margin-bottom:.2rem;}
+.stat-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:400;}
+.stat-sub{font-size:12.5px;color:var(--muted);margin-top:.3rem;line-height:1.5;}
+.credentials{margin-top:2rem;padding-top:2rem;border-top:1px solid var(--rule);}
+.cred-item{display:flex;gap:1rem;margin-bottom:1rem;align-items:flex-start;}
+.cred-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:7px;}
+.cred-text{font-size:13px;line-height:1.6;color:var(--muted);}
+.cred-text strong{color:var(--ink);font-weight:500;}
+.pull-quote{font-family:'Playfair Display',serif;font-size:1.25rem;font-style:italic;font-weight:400;color:var(--accent);border-left:3px solid var(--accent);padding:.75rem 0 .75rem 1.25rem;margin-top:2rem;line-height:1.5;}
+.ai-band{background:var(--ink);padding:5rem 0;border-top:4px solid var(--accent);}
+.ai-band-inner{max-width:1100px;margin:0 auto;padding:0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.ai-label{font-size:9px;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:1rem;}
+.ai-headline{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,2.8vw,2.6rem);font-weight:700;line-height:1.15;color:#f0ece3;margin-bottom:1.25rem;}
+.ai-headline em{font-style:italic;color:#e8a090;}
+.ai-body{font-size:14px;color:rgba(240,236,227,.6);line-height:1.85;font-weight:300;}
+.ai-body p+p{margin-top:1em;}
+.ai-metrics{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.ai-metric{background:#1a1815;padding:1.4rem 1.5rem;border-left:3px solid var(--accent);}
+.ai-metric-num{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:900;color:#e8a090;line-height:1;margin-bottom:.3rem;}
+.ai-metric-desc{font-size:12px;color:rgba(240,236,227,.45);line-height:1.5;font-weight:300;}
+.ava-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(200,57,26,.15);border:1px solid rgba(200,57,26,.3);padding:.4rem 1rem;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#e8a090;margin-bottom:1.5rem;font-weight:400;}
+.ava-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+#work{background:#161412;color:var(--paper);}
+#work .section-label{color:#e8a090;}
+#work .section-label::after{background:rgba(255,255,255,.12);}
+#work .section-headline{color:#f0ece3;}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:3rem;}
+.work-card{background:#1c1917;padding:2rem;position:relative;overflow:hidden;transition:background .3s;text-decoration:none;color:inherit;display:block;}
+.work-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--accent);transition:height .3s;}
+.work-card:hover{background:#231f1c;}
+.work-card:hover::before{height:100%;}
+.work-card-type{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;font-weight:500;}
+.work-card-title{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;line-height:1.2;color:#f0ece3;margin-bottom:.75rem;}
+.work-card-desc{font-size:13px;color:rgba(240,236,227,.45);line-height:1.75;font-weight:300;}
+.work-card-philosophy{font-size:12px;color:rgba(240,236,227,.28);line-height:1.7;font-weight:300;font-style:italic;margin-top:.75rem;padding-top:.75rem;border-top:1px solid rgba(255,255,255,.06);}
+.work-card-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:1.25rem;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);text-decoration:none;font-weight:400;}
+.work-card-link svg{width:11px;height:11px;}
+.work-card-wide{grid-column:1/-1;}
+.work-highlights{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.08);}
+.highlight-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(240,236,227,.35);font-weight:500;margin-bottom:1rem;}
+.highlights-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.highlight-item{border-left:2px solid rgba(200,57,26,.4);padding-left:1rem;}
+.highlight-title{font-size:12px;font-weight:500;color:rgba(240,236,227,.8);margin-bottom:.4rem;letter-spacing:.02em;}
+.highlight-desc{font-size:12px;color:rgba(240,236,227,.35);line-height:1.7;font-weight:300;}
+.screen-name-note{grid-column:1/-1;font-size:11px;color:rgba(240,236,227,.25);padding:1rem 0 0;letter-spacing:.03em;font-style:italic;}
+.screen-name-note strong{color:rgba(240,236,227,.4);font-weight:400;}
+#philosophy{background:var(--teal);color:var(--teal-bg);}
+#philosophy .section-label{color:#a8d8cc;}
+#philosophy .section-label::after{background:rgba(255,255,255,.2);}
+.philosophy-quote{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.2vw,2.8rem);font-weight:700;font-style:italic;line-height:1.25;color:#fff;max-width:780px;margin-bottom:3.5rem;position:relative;padding-left:2rem;}
+.philosophy-quote::before{content:'\201C';position:absolute;left:-.75rem;top:-.5rem;font-size:7rem;color:rgba(255,255,255,.1);font-family:'Playfair Display',serif;line-height:1;}
+.philosophy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
+.phil-item{border-top:1px solid rgba(255,255,255,.2);padding-top:1.5rem;}
+.phil-number{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:rgba(255,255,255,.15);line-height:1;margin-bottom:.5rem;}
+.phil-title{font-size:13.5px;font-weight:500;color:#fff;margin-bottom:.5rem;letter-spacing:.03em;}
+.phil-text{font-size:13px;color:rgba(232,244,240,.7);line-height:1.75;font-weight:300;}
+#experience{border-top:1px solid var(--rule);}
+.exp-item{display:grid;grid-template-columns:180px 1fr;gap:2rem;padding:2.5rem 0;border-bottom:1px solid var(--rule);align-items:start;}
+.exp-year{font-size:11.5px;letter-spacing:.08em;color:var(--muted);font-weight:400;padding-top:4px;text-transform:uppercase;}
+.exp-org{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:.4rem;}
+.exp-role{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;line-height:1.2;margin-bottom:.75rem;}
+.exp-desc{font-size:14px;color:var(--muted);line-height:1.75;font-weight:300;}
+.exp-desc p+p{margin-top:.75em;}
+.exp-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.85rem;}
+.tag{font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border:1px solid var(--rule);color:var(--muted);font-weight:400;}
+.tag.hi{border-color:var(--accent);color:var(--accent);}
+.award-badge{display:inline-flex;align-items:center;gap:.4rem;background:#fdf6e3;border:1px solid #e8c84a;color:#7a6000;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;font-weight:500;margin-top:.85rem;}
+#contact{background:var(--ink);color:var(--paper);text-align:center;padding:6rem 0;}
+#contact .section-label{justify-content:center;color:#e8a090;}
+#contact .section-label::before,#contact .section-label::after{display:none;}
+.contact-headline{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:900;font-style:italic;line-height:1.05;color:var(--paper);margin:1.5rem auto 3rem;max-width:700px;}
+.contact-links{display:flex;justify-content:center;flex-wrap:wrap;gap:.5rem;}
+.contact-link{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;font-size:11px;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;font-weight:400;transition:all .2s;}
+.contact-link.primary{background:var(--accent);color:#fff;}
+.contact-link.primary:hover{background:#a52e14;}
+.contact-link.secondary{border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.65);}
+.contact-link.secondary:hover{border-color:rgba(255,255,255,.5);color:#fff;}
+footer{background:#080706;padding:1.5rem 0;text-align:center;font-size:10.5px;color:rgba(255,255,255,.2);letter-spacing:.1em;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+.fade-up{opacity:0;animation:fadeUp .7s ease forwards;}
+.d1{animation-delay:.1s;}.d2{animation-delay:.25s;}.d3{animation-delay:.4s;}.d4{animation-delay:.55s;}
+@media(max-width:820px){
+  .about-grid,.ai-band-inner{grid-template-columns:1fr;gap:3rem;}
+  .work-grid{grid-template-columns:1fr;}
+  .philosophy-grid{grid-template-columns:1fr;gap:1.5rem;}
+  .exp-item{grid-template-columns:1fr;gap:.4rem;}
+  .ai-metrics{grid-template-columns:1fr 1fr;}
+  .masthead-top{flex-direction:column;align-items:flex-start;}
+  .masthead-meta{text-align:left;}
+  nav ul{flex-wrap:wrap;}
+  nav ul li a{padding:.5rem .75rem;font-size:10px;}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-top">
+      <div>
+        <div class="masthead-kicker fade-up d1">Content Strategy · AI Narrative · Media and Journalism</div>
+        <span class="masthead-name fade-up d2"><span class="first">Raman</span> Vedula</span>
+      </div>
+      <div class="masthead-meta fade-up d3">
+        United States<br>
+        MBA · UCLA Anderson · Easton Fellow<br>
+        vs.venkhatraman@gmail.com
+      </div>
+    </div>
+    <div class="masthead-tagline fade-up d4">
+      <span>BBC World Service</span><span class="sep">✦</span>
+      <span>DD News · India's Public Broadcaster</span><span class="sep">✦</span>
+      <span>UCLA Anderson Easton Center</span><span class="sep">✦</span>
+      <span>Raman's So What</span><span class="sep">✦</span>
+      <span>The Raman Effect</span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#ai">AI Work</a></li>
+    <li><a href="#work">Portfolio</a></li>
+    <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <div class="container">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div>
+        <div class="body-copy">
+          <p>Raman Vedula is a narrative storyteller, content strategist, and AI narrative builder whose career spans broadcast television, print journalism, digital media, and AI-driven content systems — unified by one discipline: making genuinely complex ideas land for real audiences.</p>
+          <p>Over a decade in journalism — anchoring business coverage at Doordarshan's DD News, reporting for Dainik Jagran City Plus, and building BBC Telugu TV from zero to 1.5 million viewers at BBC World Service — established a foundation in high-stakes storytelling at national and global scale. That work earned a national ENBA Award for Best News Anchor.</p>
+          <p>At UCLA Anderson's Easton Technology Management Center, that editorial instinct crossed into new territory. Raman built AVA, a custom AI content system that reshaped how the Center produces video, newsletters, and digital content — cutting production time by 75% while sharpening strategic coherence across platforms.</p>
+          <p>An MBA graduate of UCLA Anderson (Easton Fellow, Technology and AI Leadership, June 2026), Raman brings an uncommon combination to content leadership roles: the structural thinking of a business strategist, the platform fluency of a digital builder, and the storytelling instinct of a journalist who has worked at the highest levels of media.</p>
+        </div>
+        <blockquote class="pull-quote">"Useful technology that goes unexplained is technology wasted."</blockquote>
+        <div class="credentials">
+          <div class="cred-item">
+            <div class="cred-dot"></div>
+            <div class="cred-text"><strong>UCLA Anderson · Easton Fellow</strong> — MBA, Technology and AI Leadership. Content Strategy &amp; AI-Driven Narrative Lead at Easton Center. June 2026.</div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-dot"></div>
+            <div class="cred-text"><strong>BBC World Service</strong> — Senior Broadcast Journalist. Launched BBC Telugu TV from zero to 1.5M viewers. Produced and hosted BBC Click Telugu — Best Technology Show in India. ENBA National Award, Best News Anchor.</div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-dot"></div>
+            <div class="cred-text"><strong>Doordarshan (DD News)</strong> — Business News Editor and Anchor. Launched Business Morning, Finance World, and Economy Today. 20M+ weekly viewers.</div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-dot"></div>
+            <div class="cred-text"><strong>Dainik Jagran City Plus</strong> — Sr. Reporter. 300+ stories, 175+ bylines, India's first community newspaper.</div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-dot"></div>
+            <div class="cred-text"><strong>NCC · Ministry of Defence, India</strong> — Selected as official Youth Ambassador to South-East Asia through competitive national examination and leadership assessment.</div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-stats">
+        <div class="stat">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Years across journalism</div>
+          <div class="stat-sub">Broadcast, print, digital — BBC, DD News, Dainik Jagran</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">1.5M</div>
+          <div class="stat-label">Viewers built from zero</div>
+          <div class="stat-sub">BBC Telugu TV — launched and scaled in under two years</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">75%</div>
+          <div class="stat-label">Content production time cut</div>
+          <div class="stat-sub">From 7–8 hours to under 2, via AVA at Easton</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">20M+</div>
+          <div class="stat-label">Weekly viewers at DD News</div>
+          <div class="stat-sub">Across 3 flagship business and economics programs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ai-band" id="ai">
+  <div class="ai-band-inner">
+    <div>
+      <div class="ai-label">What I built at Easton · UCLA Anderson</div>
+      <div class="ava-badge"><div class="ava-dot"></div>AVA — Custom AI Content System</div>
+      <div class="ai-headline">Not just <em>using</em> AI to make content — building the system that makes content at scale.</div>
+      <div class="ai-body">
+        <p>AVA is a custom AI assistant designed and deployed at UCLA Anderson's Easton Technology Management Center — integrated across video, newsletters, LinkedIn, and digital channels. It cut production time from 7–8 hours to under 2.</p>
+        <p>That's not a productivity stat. It's a proof of concept for what happens when you combine editorial instinct with AI architecture: content gets faster, more consistent, and more strategically coherent at the same time.</p>
+        <p>At a moment when every organization is asking what AI means for storytelling, this work answers that question in practice — for a center whose entire mandate is understanding what AI means for business and society. The trend is catching up to work already done.</p>
+      </div>
+    </div>
+    <div class="ai-metrics">
+      <div class="ai-metric">
+        <div class="ai-metric-num">75%</div>
+        <div class="ai-metric-desc">Reduction in content production time — 7–8 hrs to under 2</div>
+      </div>
+      <div class="ai-metric">
+        <div class="ai-metric-num">35+</div>
+        <div class="ai-metric-desc">Videos produced across platforms in first 5 months</div>
+      </div>
+      <div class="ai-metric">
+        <div class="ai-metric-num">400+</div>
+        <div class="ai-metric-desc">LinkedIn audience growth in 3 months through narrative-led content</div>
+      </div>
+      <div class="ai-metric">
+        <div class="ai-metric-num">7+</div>
+        <div class="ai-metric-desc">Flagship events and programs led with structured visual narrative</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="work">
+  <div class="container">
+    <div class="section-label">Selected work</div>
+    <div class="section-headline">Stories that changed the frame.</div>
+    <div class="work-grid">
+
+      <!-- RAMAN'S SO WHAT - WIDE CARD -->
+      <a href="https://youtube.com/@RamansSoWhat" target="_blank" class="work-card work-card-wide">
+        <div class="work-card-type">YouTube · Raman's So What</div>
+        <div class="work-card-title">The channel where power gets explained, not just reported.</div>
+        <div class="work-card-desc">Every geopolitical event has two stories. The one everyone reports. And the one that explains how power actually moved. The first is about events. The second is about constraints, incentives, fear, and survival. That gap is where this channel lives. No headlines. No hot takes. No rushing to a conclusion. Just the real story behind the story.</div>
+        <div class="work-highlights">
+          <div class="highlight-label">Highlights</div>
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <div class="highlight-title">The Raman Effect — Flagship Show</div>
+              <div class="highlight-desc">The signature series breaking down the decisions, trade-offs, and hidden mechanisms behind the world's most consequential moments. Each episode delivers one visceral "So What" that permanently reframes how the audience sees a situation.</div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-title">Power, War &amp; Politics: The Middle East Dynamics</div>
+              <div class="highlight-desc">A deep-dive series on the ongoing Iran war — unpacking Operation Epic Fury not as a military event but as a collision of structural constraints no outcome on the ground can resolve.</div>
+            </div>
+          </div>
+        </div>
+        <div class="work-card-link">Visit Channel <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
+      </a>
+
+      <a href="https://www.youtube.com/@Venkatramangeopolitics" target="_blank" class="work-card">
+        <div class="work-card-type">YouTube · Geopolitics in Telugu</div>
+        <div class="work-card-title">Telugu Geopolitics Channel</div>
+        <div class="work-card-desc">Structural geopolitical analysis for Telugu-speaking audiences worldwide — the same rigorous framework, delivered in a language that reaches tens of millions across India and the diaspora. Complex global power dynamics made accessible without losing the depth.</div>
+        <div class="work-card-link">Watch on YouTube <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
+      </a>
+
+      <a href="https://substack.com/@ramanvedula" target="_blank" class="work-card">
+        <div class="work-card-type">Substack · The Raman Effect</div>
+        <div class="work-card-title">Long-form Geopolitics &amp; Technology Analysis</div>
+        <div class="work-card-desc">Written for readers who want the structural explanation, not the headline — covering power, technology, and the invisible logic beneath the world's most consequential moments.</div>
+        <div class="work-card-link">Read on Substack <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=GerAv5Q4eRA&list=PLxi6aSsviiR1FT3yogcT9fx9vyMf9qcYz&index=15" target="_blank" class="work-card">
+        <div class="work-card-type">BBC World Service · Best Technology Show in India</div>
+        <div class="work-card-title">BBC Click Telugu</div>
+        <div class="work-card-desc">100+ episodes covering robotics, drones, virtual reality, and emerging systems through cinematic storytelling. Received national recognition as India's Best Technology Show.</div>
+        <div class="work-card-link">Watch an episode <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
+      </a>
+
+      <div class="work-card">
+        <div class="work-card-type">UCLA Anderson · Easton Technology Management Center</div>
+        <div class="work-card-title">AVA — AI Content System</div>
+        <div class="work-card-desc">Custom GPT built and deployed for Easton's multi-platform content operations — scripting, event narrative, structured communication. Production time cut by 75%. 35+ videos in 5 months.</div>
+      </div>
+
+      <div class="work-card">
+        <div class="work-card-type">BBC World Service</div>
+        <div class="work-card-title">Launching BBC Telugu TV</div>
+        <div class="work-card-desc">Built editorial identity, tone, and programming for a new-language BBC channel from zero. 1.5 million viewers within two years. 950+ episodes anchored and produced.</div>
+        <div style="display:flex;gap:1.25rem;flex-wrap:wrap;">
+          <a href="https://www.youtube.com/@BBCNewsTelugu" target="_blank" class="work-card-link">Visit BBC Telugu <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+          <a href="https://www.youtube.com/watch?v=yqT6dKwvFCc" target="_blank" class="work-card-link">Watch a show example <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="screen-name-note">* Raman Vedula appears on screen as <strong>Venkat Raman</strong> — his YouTube screen name across both channels.</div>
+
+    </div>
+  </div>
+</section>
+
+<section id="philosophy">
+  <div class="container">
+    <div class="section-label">How I think</div>
+    <div class="philosophy-quote">Great storytelling leads with the conviction behind a product — not its features.</div>
+    <div class="philosophy-grid">
+      <div class="phil-item">
+        <div class="phil-number">01</div>
+        <div class="phil-title">One visceral "So What"</div>
+        <div class="phil-text">Every piece of content has a single thesis that permanently reframes how the audience sees something. Not a list of takeaways. One frame shift. Everything else is logistics.</div>
+      </div>
+      <div class="phil-item">
+        <div class="phil-number">02</div>
+        <div class="phil-title">Never an event recap</div>
+        <div class="phil-text">A story is a provocation, not a summary. If a reader can get the same thing from a news ticker, the job isn't done. The goal is always the version that changes the question.</div>
+      </div>
+      <div class="phil-item">
+        <div class="phil-number">03</div>
+        <div class="phil-title">AI as editorial infrastructure</div>
+        <div class="phil-text">AI doesn't replace editorial instinct — it multiplies it. The organizations that win will combine genuine storytelling craft with AI architecture. That system has already been built.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-label">Experience</div>
+
+    <div class="exp-item">
+      <div class="exp-year">Jun 2025 – Present</div>
+      <div>
+        <div class="exp-org">UCLA Anderson · Easton Technology Management Center</div>
+        <div class="exp-role">Content Strategy &amp; AI-Driven Narrative Lead</div>
+        <div class="exp-desc">
+          <p>Built and deployed AVA — a custom AI assistant integrated with Easton's platforms — scaling content production across video, newsletters, and digital channels, reducing production time from several hours to under two.</p>
+          <p>Led video storytelling for 2 flagship events and 7+ additional programs in the first 5 months. Produced 35+ videos across LinkedIn and internal platforms with average 500–750 views; multiple exceeding 1,000. Grew LinkedIn audience from 900 to 1,300 in 3 months. Partnered with faculty and leadership on multi-platform strategy across LinkedIn, YouTube, Instagram, Slack, and newsletters.</p>
+        </div>
+        <div class="exp-tags">
+          <span class="tag hi">AI Systems</span>
+          <span class="tag hi">Custom GPT / AVA</span>
+          <span class="tag">Content Strategy</span>
+          <span class="tag">Video Storytelling</span>
+          <span class="tag">Multi-Platform</span>
+          <span class="tag">LinkedIn Growth</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-year">May 2017 – Jan 2021</div>
+      <div>
+        <div class="exp-org">BBC World Service</div>
+        <div class="exp-role">Senior Broadcast Journalist — Content Strategy &amp; Partnerships</div>
+        <div class="exp-desc">
+          <p>Led the launch of BBC Telugu TV from the ground up — 1.5 million viewers within two years. Anchored and produced 950+ episodes of daily programming translating complex geopolitical and technology developments into high-retention video narratives. Served as acting deputy team leader of the BBC Telugu TV team.</p>
+          <p>Produced and presented 100+ episodes of BBC Click Telugu covering robotics, drones, VR, and emerging systems — recognized nationally as Best Technology Show in India. Also presented Labbu Dabbu, a financial literacy explainer series for mass audiences.</p>
+        </div>
+        <div class="award-badge">&#9733; ENBA National Award — Best News Anchor, South India 2018</div>
+        <div class="exp-tags">
+          <span class="tag">Channel Launch</span>
+          <span class="tag">Technology Storytelling</span>
+          <span class="tag">950+ Episodes</span>
+          <span class="tag">1.5M Viewers</span>
+          <span class="tag">Financial Literacy</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-year">Aug 2011 – Apr 2017</div>
+      <div>
+        <div class="exp-org">Doordarshan (DD News) · India's National Public Broadcaster</div>
+        <div class="exp-role">Business News Editor &amp; Anchor</div>
+        <div class="exp-desc">
+          <p>Led editorial and on-air responsibilities as Business News Editor across six years at India's national broadcaster. Launched and anchored flagship programs — Business Morning, Economy Today, and Finance World — reaching 20M+ weekly viewers. Hosted Candid Conversation, an interview program with government ministers and senior officials.</p>
+          <p>Reported on Indian macroeconomics, transport infrastructure, international auto shows, the World Economic Forum, the World Bank, and the IMF. Built and managed a team of 10+ journalists. Increased engagement from ~2,000 to 6,000 interactions per episode through improved narrative structure.</p>
+        </div>
+        <div class="exp-tags">
+          <span class="tag">20M+ Weekly Viewers</span>
+          <span class="tag">Business Morning</span>
+          <span class="tag">Finance World</span>
+          <span class="tag">Economy Today</span>
+          <span class="tag">Team of 10+</span>
+          <span class="tag">Macroeconomics</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-year">Apr 2012 – Jan 2014</div>
+      <div>
+        <div class="exp-org">Dainik Jagran City Plus</div>
+        <div class="exp-role">Senior Reporter — Community &amp; Civic Journalism</div>
+        <div class="exp-desc">
+          <p>Covered community, civic, and infrastructure journalism for India's first community-based newspaper. Worked closely with government officials and civic leaders to translate complex urban planning and policy issues into accessible, action-oriented stories. Reported over 300 stories in 22 months with 175+ bylines, prompting government response on over 75 infrastructure problems faced by local communities.</p>
+          <p>Recruited and trained interns; led a team of reporters covering urban planning issues across Hyderabad.</p>
+        </div>
+        <div class="exp-tags">
+          <span class="tag">300+ Stories</span>
+          <span class="tag">175+ Bylines</span>
+          <span class="tag">Print Journalism</span>
+          <span class="tag">Civic Reporting</span>
+          <span class="tag">Team Leadership</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-year">Feb 2021 – Mar 2023</div>
+      <div>
+        <div class="exp-org">Apex Advanced Technology</div>
+        <div class="exp-role">Internal Consultant — Marketing, Communications &amp; Business Development</div>
+        <div class="exp-desc">Developed visual content framework and storyboarding structures used across multiple video productions. Led go-to-market and subcontracting strategy for telecom clients, securing vendor approvals and multi-state contracts. Restructured internal communications workflows using ProWorks, improving cross-team visibility and project alignment.</div>
+        <div class="exp-tags">
+          <span class="tag">B2B Strategy</span>
+          <span class="tag">Content Framework</span>
+          <span class="tag">Telecom</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-year">Jun 2011 – Apr 2012</div>
+      <div>
+        <div class="exp-org">HYTV</div>
+        <div class="exp-role">Senior Sports Correspondent &amp; Head of Sports Strategy</div>
+        <div class="exp-desc">Built and led the sports division from scratch. Produced and presented the daily sports show Sports Unlimited. Led a team of four reporters. Forged partnerships with schools, universities, and state sporting bodies to expand local sports programming. Several athletes featured in HYTV coverage went on to represent India internationally, including at the Olympics.</div>
+        <div class="exp-tags">
+          <span class="tag">Division Launch</span>
+          <span class="tag">Sports Unlimited</span>
+          <span class="tag">Sports Media</span>
+          <span class="tag">Partnerships</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-label">Get in touch</div>
+    <div class="contact-headline">Open to the right conversation.</div>
+    <div class="contact-links">
+      <a href="mailto:vs.venkhatraman@gmail.com" class="contact-link primary">Email me</a>
+      <a href="https://linkedin.com/in/raman-vedula" target="_blank" class="contact-link secondary">LinkedIn</a>
+      <a href="https://youtube.com/@RamansSoWhat" target="_blank" class="contact-link secondary">YouTube</a>
+      <a href="https://substack.com/@ramanvedula" target="_blank" class="contact-link secondary">Substack</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    Raman Vedula &nbsp;·&nbsp; United States &nbsp;·&nbsp; 2026
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.exp-item, .work-card, .phil-item, .stat, .ai-metric').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(18px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
