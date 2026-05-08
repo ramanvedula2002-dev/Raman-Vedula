@@ -78,6 +78,15 @@ section{padding:5rem 0;}
 .work-card-philosophy{font-size:12px;color:rgba(240,236,227,.28);line-height:1.7;font-weight:300;font-style:italic;margin-top:.75rem;padding-top:.75rem;border-top:1px solid rgba(255,255,255,.06);}
 .work-card-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:1.25rem;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);text-decoration:none;font-weight:400;}
 .work-card-link svg{width:11px;height:11px;}
+.work-card-wide{grid-column:1/-1;}
+.work-highlights{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.08);}
+.highlight-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(240,236,227,.35);font-weight:500;margin-bottom:1rem;}
+.highlights-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.highlight-item{border-left:2px solid rgba(200,57,26,.4);padding-left:1rem;}
+.highlight-title{font-size:12px;font-weight:500;color:rgba(240,236,227,.8);margin-bottom:.4rem;letter-spacing:.02em;}
+.highlight-desc{font-size:12px;color:rgba(240,236,227,.35);line-height:1.7;font-weight:300;}
+.screen-name-note{grid-column:1/-1;font-size:11px;color:rgba(240,236,227,.25);padding:1rem 0 0;letter-spacing:.03em;font-style:italic;}
+.screen-name-note strong{color:rgba(240,236,227,.4);font-weight:400;}
 #philosophy{background:var(--teal);color:var(--teal-bg);}
 #philosophy .section-label{color:#a8d8cc;}
 #philosophy .section-label::after{background:rgba(255,255,255,.2);}
@@ -262,19 +271,31 @@ footer{background:#080706;padding:1.5rem 0;text-align:center;font-size:10.5px;co
     <div class="section-headline">Stories that changed the frame.</div>
     <div class="work-grid">
 
-      <a href="https://youtube.com/@RamansSoWhat" target="_blank" class="work-card">
-        <div class="work-card-type">YouTube · Raman's So What — Ongoing Series</div>
-        <div class="work-card-title">Power, War &amp; Politics: The Middle East Dynamics</div>
-        <div class="work-card-desc">A deep-dive series on the ongoing Iran war — unpacking Operation Epic Fury not as a military event but as a collision of constraints, incentives, fear, and survival. Each episode finds the story behind the story.</div>
-        <div class="work-card-philosophy">Every geopolitical event has two stories. The one everyone reports. And the one that explains how power actually moved. That gap is where this channel lives.</div>
-        <div class="work-card-link">Watch on YouTube <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
+      <!-- RAMAN'S SO WHAT - WIDE CARD -->
+      <a href="https://youtube.com/@RamansSoWhat" target="_blank" class="work-card work-card-wide">
+        <div class="work-card-type">YouTube · Raman's So What</div>
+        <div class="work-card-title">The channel where power gets explained, not just reported.</div>
+        <div class="work-card-desc">Every geopolitical event has two stories. The one everyone reports. And the one that explains how power actually moved. The first is about events. The second is about constraints, incentives, fear, and survival. That gap is where this channel lives. No headlines. No hot takes. No rushing to a conclusion. Just the real story behind the story.</div>
+        <div class="work-highlights">
+          <div class="highlight-label">Highlights</div>
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <div class="highlight-title">The Raman Effect — Flagship Show</div>
+              <div class="highlight-desc">The signature series breaking down the decisions, trade-offs, and hidden mechanisms behind the world's most consequential moments. Each episode delivers one visceral "So What" that permanently reframes how the audience sees a situation.</div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-title">Power, War &amp; Politics: The Middle East Dynamics</div>
+              <div class="highlight-desc">A deep-dive series on the ongoing Iran war — unpacking Operation Epic Fury not as a military event but as a collision of structural constraints no outcome on the ground can resolve.</div>
+            </div>
+          </div>
+        </div>
+        <div class="work-card-link">Visit Channel <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
       </a>
 
-      <a href="https://youtube.com/@RamansSoWhat" target="_blank" class="work-card">
-        <div class="work-card-type">YouTube · The Raman Effect (Telugu)</div>
-        <div class="work-card-title">Geopolitical Analysis for a Global Telugu Audience</div>
-        <div class="work-card-desc">Structural geopolitical analysis for Telugu-speaking audiences worldwide — the same rigorous "So What" framework, delivered in a language that reaches tens of millions across India and the diaspora.</div>
-        <div class="work-card-philosophy">No headlines. No hot takes. No rushing to a conclusion. Just the real story behind the story.</div>
+      <a href="https://www.youtube.com/@Venkatramangeopolitics" target="_blank" class="work-card">
+        <div class="work-card-type">YouTube · Geopolitics in Telugu</div>
+        <div class="work-card-title">Telugu Geopolitics Channel</div>
+        <div class="work-card-desc">Structural geopolitical analysis for Telugu-speaking audiences worldwide — the same rigorous framework, delivered in a language that reaches tens of millions across India and the diaspora. Complex global power dynamics made accessible without losing the depth.</div>
         <div class="work-card-link">Watch on YouTube <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
       </a>
 
@@ -285,11 +306,12 @@ footer{background:#080706;padding:1.5rem 0;text-align:center;font-size:10.5px;co
         <div class="work-card-link">Read on Substack <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
       </a>
 
-      <div class="work-card">
+      <a href="https://www.youtube.com/watch?v=GerAv5Q4eRA&list=PLxi6aSsviiR1FT3yogcT9fx9vyMf9qcYz&index=15" target="_blank" class="work-card">
         <div class="work-card-type">BBC World Service · Best Technology Show in India</div>
         <div class="work-card-title">BBC Click Telugu</div>
         <div class="work-card-desc">100+ episodes covering robotics, drones, virtual reality, and emerging systems through cinematic storytelling. Received national recognition as India's Best Technology Show.</div>
-      </div>
+        <div class="work-card-link">Watch an episode <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
+      </a>
 
       <div class="work-card">
         <div class="work-card-type">UCLA Anderson · Easton Technology Management Center</div>
@@ -297,11 +319,14 @@ footer{background:#080706;padding:1.5rem 0;text-align:center;font-size:10.5px;co
         <div class="work-card-desc">Custom GPT built and deployed for Easton's multi-platform content operations — scripting, event narrative, structured communication. Production time cut by 75%. 35+ videos in 5 months.</div>
       </div>
 
-      <div class="work-card">
+      <a href="https://www.youtube.com/@BBCNewsTelugu" target="_blank" class="work-card">
         <div class="work-card-type">BBC World Service</div>
         <div class="work-card-title">Launching BBC Telugu TV</div>
-        <div class="work-card-desc">Built editorial identity, tone, and programming for a new-language BBC channel from zero. 1.5 million viewers within two years. 950+ episodes anchored and produced.</div>
-      </div>
+        <div class="work-card-desc">Built editorial identity, tone, and programming for a new-language BBC channel from zero. 1.5 million viewers within two years. 950+ episodes anchored and produced. <a href="https://www.youtube.com/watch?v=yqT6dKwvFCc" target="_blank" style="color:var(--accent);text-decoration:none;">Watch a show example.</a></div>
+        <div class="work-card-link">Visit BBC Telugu <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M4 2h6v6"/></svg></div>
+      </a>
+
+      <div class="screen-name-note">* Raman Vedula appears on screen as <strong>Venkat Raman</strong> — his YouTube screen name across both channels.</div>
 
     </div>
   </div>
